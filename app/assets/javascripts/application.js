@@ -12,4 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require accounting-0.4.1
 //= require_tree .
