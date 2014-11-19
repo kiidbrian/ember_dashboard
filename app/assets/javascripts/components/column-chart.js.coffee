@@ -10,7 +10,7 @@ Dashboard.ColumnChartComponent = Ember.Component.extend
     $("##{@chartId}").highcharts({
       chart: { type: 'column' },
       title: { text: 'Revenue by Product' },
-      subtitle: { text: 'Click the columns to view versions. Source: kiidbrian.github.io' },
+      subtitle: { text: 'Dynamic Charts rendered by emberjs. Rails is Omakase!' },
       legend: { enabled: false },
       xAxis: {
         title: {
