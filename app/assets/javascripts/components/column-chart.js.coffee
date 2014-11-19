@@ -10,19 +10,14 @@ Dashboard.ColumnChartComponent = Ember.Component.extend
     $("##{@chartId}").highcharts({
       chart: { type: 'column' },
       title: { text: 'Revenue by Product' },
+      subtitle: { text: 'Click the columns to view versions. Source: kiidbrian.github.io' },
       legend: { enabled: false },
       xAxis: {
         title: {
           text: 'Product Number'
         }
       },
-      series: [{
-        name: 'Quantity',
-        data: [4, 4]
-      },{
-        name: 'Revenue',
-        data: [10.0, 10.0]
-      }]
+      series: @series
     })
 
   willDestroyElement: ->
